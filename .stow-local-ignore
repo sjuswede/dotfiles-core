@@ -4,4 +4,5 @@
 .gitignore
 backup/
 tmp_config.json
+README.md
 
