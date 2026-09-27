@@ -1,0 +1,40 @@
+# dotfiles
+The core stowed dotfiles for various software running under my normal Linux install.
+
+## Requirements
+
+Ensure you have the following installed on your system
+
+### Git
+
+```
+dnf install git
+```
+
+### Stow
+
+```
+dnf install stow
+```
+
+Install into $HOME using
+
+```
+$ git clone git@github.com:sjuswede/dotfiles-core.git
+```
+
+Renaming the dotfile directory to .dotfile might be handy.
+
+```
+mv ~/dotfiles-core ~/.dotfiles-core
+```
+
+The structure is one directory per program. This allows for stow'ing only select programs as required.
+
+For example:
+
+```
+stow bash
+```
+
+
