@@ -14,7 +14,9 @@ if ! [[ "$PATH" =~ "$HOME/.cargo/bin" ]]; then
 fi
 export PATH
 
-
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
 ##### History Control
 
