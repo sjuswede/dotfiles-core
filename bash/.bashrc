@@ -62,8 +62,11 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
-. "/home/jesper/.deno/env"
-source /home/jesper/.local/share/bash-completion/completions/deno.bash
+
+if [ -d ~/.deno ]; then
+    . "/home/jesper/.deno/env"
+    source /home/jesper/.local/share/bash-completion/completions/deno.bash
+fi
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"

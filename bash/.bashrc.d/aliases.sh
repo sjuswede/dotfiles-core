@@ -1,5 +1,12 @@
 # aliases which are useful
 
+
+# Make and change directory at once
+alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
+
+# fast find
+alias ff='find . -name $1'
+
 # Get the weather!
 alias rain='curl -4 http://wttr.in/Linkoping'
 
